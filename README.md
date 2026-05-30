@@ -106,6 +106,6 @@ Released under the [MIT License](LICENSE).
 
 <div align="center">
 
-**Vedixx** — We build growth systems. · [vedixx.com](https://www.vedixx.com)
+**Vedixx** — We build growth systems. · [vedixx.netlify.app](https://vedixx.netlify.app)
 
 </div>

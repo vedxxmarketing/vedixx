@@ -4,7 +4,7 @@
 // It is used for SEO canonical URLs, the sitemap, and Open Graph tags.
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const SITE_URL = 'https://www.vedixx.com';
+export const SITE_URL = 'https://vedixx.netlify.app';
 
 export const SITE_NAME = 'Vedixx';
 
