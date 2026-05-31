@@ -58,14 +58,18 @@ const Navbar = () => {
           {/* 1. Logo (Left) */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center group" aria-label="Vedixx home">
-              <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="relative h-7 w-[120px] sm:h-9 sm:w-[156px] lg:h-10 lg:w-[174px]"
+              >
                 <Image
                   src="/logo.png"
                   alt="Vedixx"
-                  width={174}
-                  height={40}
+                  fill
                   priority
-                  className="transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.6)]"
+                  sizes="174px"
+                  className="object-contain object-left transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.6)]"
                 />
               </motion.div>
             </Link>
@@ -148,7 +152,7 @@ const Navbar = () => {
               <div className="p-1 sm:p-1.5 rounded-full bg-vedixx-primary/20 group-hover:bg-vedixx-primary/30 transition-colors">
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-vedixx-primary" />
               </div>
-              <span className="font-bold font-heading tracking-wide text-sm sm:text-base">{CONTACT.phone}</span>
+              <span className="hidden sm:inline font-bold font-heading tracking-wide text-sm sm:text-base">{CONTACT.phone}</span>
             </motion.a>
 
             {/* Mobile Menu Button (visible below lg) */}
