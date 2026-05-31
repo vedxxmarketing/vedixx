@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import { VedixxLogo } from './icons/VedixxLogo';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -57,13 +57,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* 1. Logo (Left) */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center gap-2 group">
-              <motion.div whileHover={{ rotate: 180, scale: 1.1 }} transition={{ duration: 0.5 }}>
-                <VedixxLogo className="w-8 h-8 sm:w-10 sm:h-10 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.8)]" />
+            <Link href="/" className="flex items-center group" aria-label="Vedixx home">
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                <Image
+                  src="/logo.png"
+                  alt="Vedixx"
+                  width={174}
+                  height={40}
+                  priority
+                  className="transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.6)]"
+                />
               </motion.div>
-              <span className="text-xl sm:text-2xl font-heading font-bold text-vedixx-text tracking-tighter transition-colors duration-300 group-hover:text-white group-hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.5)]">
-                VEDIXX
-              </span>
             </Link>
           </div>
 

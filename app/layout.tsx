@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  // Favicon is auto-wired from app/icon.svg
+  // Favicon is auto-wired from app/icon.png
 };
 
 export const viewport: Viewport = {
