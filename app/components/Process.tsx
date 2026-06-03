@@ -168,9 +168,9 @@ const Process = () => {
                   opacity: hasHover && !isHovered ? 0.5 : 1,
                   filter: hasHover && !isHovered ? 'blur(2px)' : 'none',
                   zIndex: isHovered ? 10 : 1,
-                  borderColor: isHovered ? 'rgba(56,189,248,0.4)' : 'rgba(255,255,255,0.06)',
-                  background: isHovered ? 'rgba(56,189,248,0.05)' : undefined,
-                  boxShadow: isHovered ? '0 10px 15px -3px rgba(56,189,248,0.1)' : 'none',
+                  borderColor: isHovered ? 'rgba(138,149,201,0.4)' : 'rgba(255,255,255,0.06)',
+                  background: isHovered ? 'rgba(138,149,201,0.05)' : undefined,
+                  boxShadow: isHovered ? '0 10px 15px -3px rgba(138,149,201,0.1)' : 'none',
                 }}
               >
                 {/* Icon + Number */}

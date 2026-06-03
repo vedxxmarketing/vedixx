@@ -69,7 +69,7 @@ const Navbar = () => {
                   fill
                   priority
                   sizes="174px"
-                  className="object-contain object-left transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.6)]"
+                  className="object-contain object-left transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(138,149,201,0.6)]"
                 />
               </motion.div>
             </Link>

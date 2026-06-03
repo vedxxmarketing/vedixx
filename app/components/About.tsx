@@ -130,7 +130,7 @@ const About = () => {
                 </div>
                 <div className="absolute bottom-3 left-3 sm:bottom-8 sm:left-8 p-2 sm:p-4 bg-black/70 sm:bg-black/60 sm:backdrop-blur-sm rounded-lg sm:rounded-xl border border-white/10 sm:hidden">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                    <div className="w-2 h-2 rounded-full bg-vedixx-primary"></div>
                     <span className="text-[10px] font-bold text-white">Automations Active</span>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const About = () => {
                     className="absolute bottom-8 left-8 p-4 bg-black/60 backdrop-blur-sm rounded-xl border border-white/10"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-vedixx-primary"></div>
                       <span className="text-sm font-bold text-white">Automations Active</span>
                     </div>
                   </motion.div>

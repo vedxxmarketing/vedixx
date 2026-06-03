@@ -13,12 +13,13 @@ const config: Config = {
     extend: {
       colors: {
         vedixx: {
-          bg: '#0a0a0a', // Rich Black
-          card: '#161616', // Dark Grey for cards
-          text: '#f3f3f3', // Off-White
-          muted: '#a1a1aa', // Muted Grey
-          accent: '#ffffff', // White for strong contrast
-          primary: '#3b82f6', // Subtle blue for tech feel
+          // Night Indigo palette (dark)
+          bg: '#0D1230', // Deep navy
+          card: '#181E45', // Lighter navy for cards
+          text: '#EEF1FA', // Off-white (palette lightest)
+          muted: '#9AA3D0', // Periwinkle-grey
+          accent: '#EEF1FA', // Lightest tint for strong contrast
+          primary: '#6675C6', // Balanced periwinkle-indigo accent
         },
       },
       fontFamily: {

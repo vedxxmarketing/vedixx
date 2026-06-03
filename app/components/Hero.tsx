@@ -17,7 +17,7 @@ const Hero = () => {
     'Revenue Engines',
   ];
 
-  const gradientColor = 'from-sky-300 via-cyan-200 to-white';
+  const gradientColor = 'from-[#8A95C9] via-[#C3C9EC] to-white';
 
   useEffect(() => {
     const interval = setInterval(() => {

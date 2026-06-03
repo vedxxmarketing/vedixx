@@ -82,7 +82,7 @@ const ParticleBackground = () => {
 
       draw() {
         if (!ctx) return;
-        ctx.fillStyle = 'rgba(56, 189, 248, 0.4)';
+        ctx.fillStyle = 'rgba(138, 149, 201, 0.4)';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -125,7 +125,7 @@ const ParticleBackground = () => {
             if (distSq < connectionDistance * connectionDistance) {
               const distance = Math.sqrt(distSq);
               ctx.beginPath();
-              ctx.strokeStyle = `rgba(56, 189, 248, ${0.12 - (distance / connectionDistance) * 0.12})`;
+              ctx.strokeStyle = `rgba(138, 149, 201, ${0.12 - (distance / connectionDistance) * 0.12})`;
               ctx.lineWidth = 0.5;
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
