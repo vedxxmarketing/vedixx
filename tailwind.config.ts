@@ -2,13 +2,6 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
-  // These color utilities are built dynamically at runtime (e.g. `bg-${color}-500/20`)
-  // in the service pages, so Tailwind can't see them statically. Safelist keeps them.
-  safelist: [
-    {
-      pattern: /(bg|text|border)-(red|blue|green|purple|yellow|amber|cyan|indigo|pink|orange)-(400|500)(\/\d+)?/,
-    },
-  ],
   theme: {
     extend: {
       colors: {

@@ -40,32 +40,32 @@ const stats = [
 
 const deliverables = [
   {
-    icon: <Target className="w-6 h-6 text-red-400" />,
+    icon: <Target className="w-6 h-6 text-vedixx-primary" />,
     title: 'Paid Acquisition Systems',
     desc: 'Google Ads for high-intent demand capture and Meta Ads for demand generation — structured, tested, and scaled by ROAS.',
   },
   {
-    icon: <Search className="w-6 h-6 text-blue-400" />,
+    icon: <Search className="w-6 h-6 text-vedixx-primary" />,
     title: 'SEO Growth Engine',
     desc: 'Technical SEO, intent-based content, and authority building that captures buyers actively searching for what you sell.',
   },
   {
-    icon: <Database className="w-6 h-6 text-purple-400" />,
+    icon: <Database className="w-6 h-6 text-vedixx-primary" />,
     title: 'Tracking & Attribution',
     desc: 'GA4, GTM, and server-side tracking so every click, call, and conversion is mapped to the exact channel that drove it.',
   },
   {
-    icon: <MousePointerClick className="w-6 h-6 text-amber-400" />,
+    icon: <MousePointerClick className="w-6 h-6 text-vedixx-primary" />,
     title: 'Conversion Rate Optimization',
     desc: 'Landing pages and funnels engineered with conversion psychology to turn more of your existing traffic into leads.',
   },
   {
-    icon: <PenTool className="w-6 h-6 text-pink-400" />,
+    icon: <PenTool className="w-6 h-6 text-vedixx-primary" />,
     title: 'Creative & Ad Testing',
     desc: 'A continuous pipeline of hooks, angles, and creatives — we find the winners and kill the losers fast.',
   },
   {
-    icon: <BarChart3 className="w-6 h-6 text-green-400" />,
+    icon: <BarChart3 className="w-6 h-6 text-vedixx-primary" />,
     title: 'Revenue Reporting',
     desc: 'Live dashboards that report leads, sales, and ROI in plain language — the numbers that actually run your business.',
   },
@@ -84,8 +84,8 @@ const DigitalMarketingContent = () => {
       {/* HERO */}
       <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-20">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-green-500/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px] animate-pulse"></div>
+          <div className="absolute bottom-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px]"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
@@ -93,7 +93,7 @@ const DigitalMarketingContent = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs sm:text-sm font-semibold tracking-wider uppercase"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-vedixx-primary/10 border border-vedixx-primary/20 text-vedixx-primary text-xs sm:text-sm font-semibold tracking-wider uppercase"
           >
             <Zap className="w-4 h-4" /> Integrated Growth Systems
           </motion.div>
@@ -106,7 +106,7 @@ const DigitalMarketingContent = () => {
           >
             Stop Running Ads.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vedixx-primary to-vedixx-primary">
               Start Building Revenue.
             </span>
           </motion.h1>
@@ -123,11 +123,11 @@ const DigitalMarketingContent = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 text-base sm:text-lg font-medium text-white/90">
               <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-green-400"></span> Paid = Immediate Scale
+                <span className="w-2 h-2 rounded-full bg-vedixx-primary"></span> Paid = Immediate Scale
               </span>
               <span className="hidden sm:block text-white/20">|</span>
               <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-blue-400"></span> SEO = Compounding Growth
+                <span className="w-2 h-2 rounded-full bg-vedixx-primary"></span> SEO = Compounding Growth
               </span>
             </div>
           </motion.div>
@@ -140,7 +140,7 @@ const DigitalMarketingContent = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-green-400 hover:text-black transition-all shadow-[0_0_40px_rgba(74,222,128,0.2)]"
+              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-primary hover:text-black transition-all shadow-[0_0_40px_rgba(102, 117, 198,0.2)]"
             >
               Get My Free Growth Audit
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -168,7 +168,7 @@ const DigitalMarketingContent = () => {
                 transition={{ delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mx-auto mb-3 w-11 h-11 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400">
+                <div className="mx-auto mb-3 w-11 h-11 rounded-xl bg-vedixx-primary/10 border border-vedixx-primary/20 flex items-center justify-center text-vedixx-primary">
                   {s.icon}
                 </div>
                 <div className="text-2xl sm:text-4xl font-bold text-white">{s.value}</div>
@@ -184,11 +184,11 @@ const DigitalMarketingContent = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <motion.div {...fadeUp} className="space-y-5 sm:space-y-6">
-              <span className="text-red-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+              <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
                 The Real Problem
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-                Most Marketing Budgets <span className="text-red-400">Leak Money.</span>
+                Most Marketing Budgets <span className="text-vedixx-primary">Leak Money.</span>
               </h2>
               <p className="text-vedixx-muted text-base sm:text-lg leading-relaxed">
                 If you can&apos;t draw a straight line from a dollar spent to a dollar earned, you&apos;re not
@@ -201,7 +201,7 @@ const DigitalMarketingContent = () => {
                   key={i}
                   className="flex items-start gap-4 p-4 sm:p-5 rounded-2xl bg-vedixx-card/40 border border-white/5"
                 >
-                  <div className="shrink-0 w-9 h-9 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
+                  <div className="shrink-0 w-9 h-9 rounded-lg bg-vedixx-primary/10 text-vedixx-primary flex items-center justify-center">
                     {p.icon}
                   </div>
                   <span className="text-sm sm:text-base text-gray-300 leading-relaxed pt-1">{p.text}</span>
@@ -222,7 +222,7 @@ const DigitalMarketingContent = () => {
             <motion.div {...fadeUp} className="space-y-6 sm:space-y-8">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6">
-                  The <span className="text-green-400">Integrated</span> Growth System
+                  The <span className="text-vedixx-primary">Integrated</span> Growth System
                 </h2>
                 <p className="text-vedixx-muted text-base sm:text-lg leading-relaxed">
                   We destroy the silos between channels. Here&apos;s how the pieces compound to lower your customer
@@ -238,7 +238,7 @@ const DigitalMarketingContent = () => {
                   { icon: <Database className="w-4 h-4" />, title: 'Unified Data', desc: 'One dashboard. Every channel. Real revenue numbers you can act on.' },
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 sm:gap-4">
-                    <div className="mt-0.5 w-7 h-7 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 shrink-0">
+                    <div className="mt-0.5 w-7 h-7 rounded-full bg-vedixx-primary/20 flex items-center justify-center text-vedixx-primary shrink-0">
                       {item.icon}
                     </div>
                     <div>
@@ -251,7 +251,7 @@ const DigitalMarketingContent = () => {
             </motion.div>
 
             <motion.div {...fadeUp} className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-vedixx-primary/10 to-vedixx-primary/10 blur-3xl"></div>
               <div className="relative border border-white/10 bg-vedixx-bg/50 backdrop-blur-xl rounded-2xl p-6 sm:p-8 space-y-6 sm:space-y-8">
                 <div className="text-center text-xs sm:text-sm font-mono text-gray-500">REVENUE FLOW</div>
                 <div className="space-y-3 sm:space-y-4">
@@ -264,10 +264,10 @@ const DigitalMarketingContent = () => {
                     <div key={i}>
                       <div
                         className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-white/5 border ${
-                          step.highlight ? 'border-green-500/30 shadow-[0_0_20px_rgba(34,197,94,0.1)]' : 'border-white/5'
+                          step.highlight ? 'border-vedixx-primary/30 shadow-[0_0_20px_rgba(102, 117, 198,0.1)]' : 'border-white/5'
                         }`}
                       >
-                        <div className={`p-2 sm:p-3 bg-${step.color}-500/20 rounded-lg text-${step.color}-400`}>
+                        <div className="p-2 sm:p-3 bg-vedixx-primary/20 rounded-lg text-vedixx-primary">
                           {step.icon}
                         </div>
                         <div>
@@ -289,7 +289,7 @@ const DigitalMarketingContent = () => {
       <section id="deliverables" className="py-12 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <span className="text-green-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
               Full-Funnel Capability
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
@@ -307,7 +307,7 @@ const DigitalMarketingContent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:bg-white/[0.06] hover:border-green-500/20 transition-all group"
+                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:bg-white/[0.06] hover:border-vedixx-primary/20 transition-all group"
               >
                 <div className="mb-4 sm:mb-5 w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   {d.icon}
@@ -324,7 +324,7 @@ const DigitalMarketingContent = () => {
       <section className="py-12 sm:py-24 bg-vedixx-card/30 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <span className="text-blue-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
               Long-Term Revenue Asset
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
@@ -337,9 +337,9 @@ const DigitalMarketingContent = () => {
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { icon: <Smartphone className="w-7 h-7 sm:w-8 sm:h-8 text-blue-400" />, title: 'Technical SEO Core', desc: 'Site speed, mobile-first indexing, schema markup, and clean architecture that search engines love.' },
-              { icon: <Search className="w-7 h-7 sm:w-8 sm:h-8 text-indigo-400" />, title: 'Search Intent Mapping', desc: 'Keywords matched to funnel stages — informational content for awareness, transactional pages for sales.' },
-              { icon: <LineChart className="w-7 h-7 sm:w-8 sm:h-8 text-cyan-400" />, title: 'Authority & Reporting', desc: 'Content and links that build topical authority — reported as organic leads and revenue, not impressions.' },
+              { icon: <Smartphone className="w-7 h-7 sm:w-8 sm:h-8 text-vedixx-primary" />, title: 'Technical SEO Core', desc: 'Site speed, mobile-first indexing, schema markup, and clean architecture that search engines love.' },
+              { icon: <Search className="w-7 h-7 sm:w-8 sm:h-8 text-vedixx-primary" />, title: 'Search Intent Mapping', desc: 'Keywords matched to funnel stages — informational content for awareness, transactional pages for sales.' },
+              { icon: <LineChart className="w-7 h-7 sm:w-8 sm:h-8 text-vedixx-primary" />, title: 'Authority & Reporting', desc: 'Content and links that build topical authority — reported as organic leads and revenue, not impressions.' },
             ].map((f, i) => (
               <motion.div
                 key={i}
@@ -347,7 +347,7 @@ const DigitalMarketingContent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-6 sm:p-8 bg-vedixx-bg/60 rounded-2xl sm:rounded-3xl border border-white/5 hover:border-blue-500/20 transition-colors"
+                className="p-6 sm:p-8 bg-vedixx-bg/60 rounded-2xl sm:rounded-3xl border border-white/5 hover:border-vedixx-primary/20 transition-colors"
               >
                 <div className="mb-4 sm:mb-6">{f.icon}</div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">{f.title}</h3>
@@ -362,7 +362,7 @@ const DigitalMarketingContent = () => {
       <section className="py-12 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <span className="text-green-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
               Immediate Scale
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
@@ -376,11 +376,11 @@ const DigitalMarketingContent = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             <motion.div {...fadeUp} className="space-y-6 sm:space-y-8">
               {[
-                { icon: <Target className="w-6 h-6 text-red-500" />, color: 'red', title: 'Google Ads — Demand Capture', desc: 'We capture high-intent users actively searching. Keywords selected by commercial intent, not just volume.' },
-                { icon: <Users className="w-6 h-6 text-blue-500" />, color: 'blue', title: 'Meta Ads — Demand Generation', desc: 'We stop the scroll. Creative testing finds the hooks and visuals that drive cheap, high-converting clicks.' },
+                { icon: <Target className="w-6 h-6 text-vedixx-primary" />, color: 'red', title: 'Google Ads — Demand Capture', desc: 'We capture high-intent users actively searching. Keywords selected by commercial intent, not just volume.' },
+                { icon: <Users className="w-6 h-6 text-vedixx-primary" />, color: 'blue', title: 'Meta Ads — Demand Generation', desc: 'We stop the scroll. Creative testing finds the hooks and visuals that drive cheap, high-converting clicks.' },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 sm:gap-6">
-                  <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-${item.color}-500/20 flex items-center justify-center shrink-0`}>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-vedixx-primary/20 flex items-center justify-center shrink-0">
                     {item.icon}
                   </div>
                   <div>
@@ -401,13 +401,13 @@ const DigitalMarketingContent = () => {
                   <div
                     key={i}
                     className={`flex items-center justify-between p-3 sm:p-4 bg-white/5 rounded-lg ${
-                      s.highlight ? 'border border-green-500/30' : ''
+                      s.highlight ? 'border border-vedixx-primary/30' : ''
                     }`}
                   >
                     <span className={`text-sm sm:text-base ${s.highlight ? 'text-white font-bold' : 'text-gray-300'}`}>
                       {s.step}
                     </span>
-                    <span className="text-xs sm:text-sm text-green-400 font-bold">{s.time}</span>
+                    <span className="text-xs sm:text-sm text-vedixx-primary font-bold">{s.time}</span>
                   </div>
                 ))}
                 <p className="text-[10px] sm:text-xs text-center text-gray-500 mt-3">
@@ -424,13 +424,13 @@ const DigitalMarketingContent = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             {...fadeUp}
-            className="bg-gradient-to-br from-purple-900/20 to-vedixx-bg border border-purple-500/20 rounded-2xl sm:rounded-[3rem] p-6 sm:p-10 md:p-16 text-center"
+            className="bg-gradient-to-br from-vedixx-primary/20 to-vedixx-bg border border-vedixx-primary/20 rounded-2xl sm:rounded-[3rem] p-6 sm:p-10 md:p-16 text-center"
           >
-            <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl bg-purple-500/15 border border-purple-500/20 flex items-center justify-center mx-auto mb-6 sm:mb-8">
-              <Database className="w-7 h-7 sm:w-10 sm:h-10 text-purple-400" />
+            <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-2xl bg-vedixx-primary/15 border border-vedixx-primary/20 flex items-center justify-center mx-auto mb-6 sm:mb-8">
+              <Database className="w-7 h-7 sm:w-10 sm:h-10 text-vedixx-primary" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-              Without Tracking, Scaling is <span className="text-red-400">Guessing.</span>
+              Without Tracking, Scaling is <span className="text-vedixx-primary">Guessing.</span>
             </h2>
             <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8 sm:mb-10">
               We set up enterprise-grade tracking before spending a cent. Every touchpoint mapped, every dollar
@@ -440,7 +440,7 @@ const DigitalMarketingContent = () => {
               {['Multi-Touch Attribution', 'Server-Side Tracking', 'Funnel Visualization', 'Real-Time ROAS'].map((tag, i) => (
                 <span
                   key={i}
-                  className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs sm:text-sm font-semibold"
+                  className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg bg-vedixx-primary/10 border border-vedixx-primary/20 text-vedixx-primary text-xs sm:text-sm font-semibold"
                 >
                   {tag}
                 </span>
@@ -451,7 +451,7 @@ const DigitalMarketingContent = () => {
       </section>
 
       {/* FAQ */}
-      <FAQ faqs={digitalMarketingFaqs} accent="text-green-400" eyebrow="Digital Marketing FAQ" />
+      <FAQ faqs={digitalMarketingFaqs} accent="text-vedixx-primary" eyebrow="Digital Marketing FAQ" />
 
       {/* CTA */}
       <section className="py-12 sm:py-20 text-center">
@@ -465,7 +465,7 @@ const DigitalMarketingContent = () => {
           <motion.div {...fadeUp}>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-vedixx-primary text-white px-8 sm:px-12 py-3.5 sm:py-6 rounded-full font-bold text-base sm:text-xl hover:bg-blue-600 transition-all shadow-2xl hover:-translate-y-1"
+              className="inline-flex items-center gap-2 bg-vedixx-primary text-white px-8 sm:px-12 py-3.5 sm:py-6 rounded-full font-bold text-base sm:text-xl hover:bg-vedixx-primary transition-all shadow-2xl hover:-translate-y-1"
             >
               Book a Free Strategy Call
               <ArrowRight className="w-5 h-5" />

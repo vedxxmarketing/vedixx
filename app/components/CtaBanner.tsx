@@ -16,7 +16,7 @@ const CtaBanner = () => {
         >
           {/* Glow accents */}
           <div className="absolute -top-1/2 left-1/4 w-[400px] h-[400px] bg-vedixx-primary/20 rounded-full blur-[120px] pointer-events-none" />
-          <div className="absolute -bottom-1/2 right-1/4 w-[400px] h-[400px] bg-purple-600/15 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute -bottom-1/2 right-1/4 w-[400px] h-[400px] bg-vedixx-primary/15 rounded-full blur-[120px] pointer-events-none" />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5 sm:space-y-7">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-white/80 text-xs sm:text-sm font-semibold">

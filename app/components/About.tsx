@@ -87,7 +87,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-vedixx-primary to-purple-600 rounded-2xl opacity-15 blur-2xl"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-vedixx-primary to-vedixx-primary rounded-2xl opacity-15 blur-2xl"></div>
             <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-vedixx-card">
               <div className="aspect-[4/3] sm:aspect-video bg-gray-800 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"></div>
@@ -111,7 +111,7 @@ const About = () => {
                 {/* Floating cards — responsive positioning */}
                 <div className="absolute top-3 right-3 sm:top-8 sm:right-8 p-2 sm:p-4 bg-black/70 sm:bg-black/60 sm:backdrop-blur-sm rounded-lg sm:rounded-xl border border-white/10">
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
+                    <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-vedixx-primary"></div>
                     <span className="text-[10px] sm:text-sm font-bold text-white">ROAS Increased 300%</span>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const About = () => {
                     className="absolute top-8 right-8 p-4 bg-black/60 backdrop-blur-sm rounded-xl border border-white/10"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-vedixx-primary"></div>
                       <span className="text-sm font-bold text-white">ROAS Increased 300%</span>
                     </div>
                   </motion.div>

@@ -98,7 +98,7 @@ const WhyVedixx = () => {
             <ul className="space-y-3 sm:space-y-4">
               {them.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-red-500/10 text-red-400 flex items-center justify-center">
+                  <span className="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-vedixx-primary/10 text-vedixx-primary flex items-center justify-center">
                     <X className="w-3.5 h-3.5" />
                   </span>
                   <span className="text-sm sm:text-base text-gray-400">{item}</span>
@@ -113,7 +113,7 @@ const WhyVedixx = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-vedixx-primary/10 to-vedixx-card border border-vedixx-primary/30 shadow-[0_0_40px_-10px_rgba(59,130,246,0.3)]"
+            className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-vedixx-primary/10 to-vedixx-card border border-vedixx-primary/30 shadow-[0_0_40px_-10px_rgba(102, 117, 198,0.3)]"
           >
             <div className="absolute -top-3 right-6 px-3 py-1 rounded-full bg-vedixx-primary text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase shadow-lg">
               The Vedixx Way

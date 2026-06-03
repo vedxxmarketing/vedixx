@@ -36,12 +36,12 @@ const stats = [
 ];
 
 const capabilities = [
-  { icon: <Zap className="w-6 h-6 text-yellow-400" />, title: 'Lead Velocity Systems', desc: 'Instant capture, AI scoring, and routing to the right rep in 30 seconds — so hot prospects never go cold.' },
-  { icon: <Bot className="w-6 h-6 text-purple-400" />, title: 'AI Support Agents', desc: 'Chatbots that resolve up to 90% of FAQs across your site and WhatsApp, escalating only what needs a human.' },
-  { icon: <Database className="w-6 h-6 text-blue-400" />, title: 'CRM Synchronization', desc: 'Marketing, sales, invoicing, and fulfillment all talking to each other with zero manual data entry.' },
-  { icon: <Mail className="w-6 h-6 text-green-400" />, title: 'Follow-Up Sequences', desc: 'Automated nurture across email, SMS, and WhatsApp until a lead buys — or clearly says no.' },
-  { icon: <Users className="w-6 h-6 text-cyan-400" />, title: 'Client Onboarding', desc: 'From signed proposal to welcome email to project channel — fully hands-off for your team.' },
-  { icon: <GitBranch className="w-6 h-6 text-pink-400" />, title: 'Workflow Architecture', desc: 'Custom multi-step logic with n8n, Zapier, and Make connecting your entire tech stack.' },
+  { icon: <Zap className="w-6 h-6 text-vedixx-primary" />, title: 'Lead Velocity Systems', desc: 'Instant capture, AI scoring, and routing to the right rep in 30 seconds — so hot prospects never go cold.' },
+  { icon: <Bot className="w-6 h-6 text-vedixx-primary" />, title: 'AI Support Agents', desc: 'Chatbots that resolve up to 90% of FAQs across your site and WhatsApp, escalating only what needs a human.' },
+  { icon: <Database className="w-6 h-6 text-vedixx-primary" />, title: 'CRM Synchronization', desc: 'Marketing, sales, invoicing, and fulfillment all talking to each other with zero manual data entry.' },
+  { icon: <Mail className="w-6 h-6 text-vedixx-primary" />, title: 'Follow-Up Sequences', desc: 'Automated nurture across email, SMS, and WhatsApp until a lead buys — or clearly says no.' },
+  { icon: <Users className="w-6 h-6 text-vedixx-primary" />, title: 'Client Onboarding', desc: 'From signed proposal to welcome email to project channel — fully hands-off for your team.' },
+  { icon: <GitBranch className="w-6 h-6 text-vedixx-primary" />, title: 'Workflow Architecture', desc: 'Custom multi-step logic with n8n, Zapier, and Make connecting your entire tech stack.' },
 ];
 
 const AutomationContent = () => {
@@ -50,8 +50,8 @@ const AutomationContent = () => {
       {/* HERO */}
       <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-20">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-purple-500/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px] animate-pulse"></div>
+          <div className="absolute bottom-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px]"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
@@ -59,7 +59,7 @@ const AutomationContent = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs sm:text-sm font-semibold tracking-wider uppercase"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-vedixx-primary/10 border border-vedixx-primary/20 text-vedixx-primary text-xs sm:text-sm font-semibold tracking-wider uppercase"
           >
             <Cpu className="w-4 h-4" /> Automation & AI Integration
           </motion.div>
@@ -71,7 +71,7 @@ const AutomationContent = () => {
             className="text-3xl sm:text-5xl lg:text-8xl font-bold font-heading text-white tracking-tight leading-[1.1]"
           >
             Your Team Does the <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vedixx-primary to-vedixx-primary">
               Thinking. We Automate the Rest.
             </span>
           </motion.h1>
@@ -94,7 +94,7 @@ const AutomationContent = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-purple-400 hover:text-black transition-all shadow-[0_0_40px_rgba(168,85,247,0.2)]"
+              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-primary hover:text-black transition-all shadow-[0_0_40px_rgba(102, 117, 198,0.2)]"
             >
               Get a Free Automation Audit
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -122,7 +122,7 @@ const AutomationContent = () => {
                 transition={{ delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mx-auto mb-3 w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                <div className="mx-auto mb-3 w-11 h-11 rounded-xl bg-vedixx-primary/10 border border-vedixx-primary/20 flex items-center justify-center text-vedixx-primary">
                   {s.icon}
                 </div>
                 <div className="text-2xl sm:text-4xl font-bold text-white">{s.value}</div>
@@ -137,7 +137,7 @@ const AutomationContent = () => {
       <section className="py-12 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12 sm:mb-16">
-            <span className="text-purple-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
               The Opportunity
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
@@ -150,12 +150,12 @@ const AutomationContent = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
-              { icon: <Clock className="w-7 h-7 text-yellow-400" />, title: 'Respond to leads in 30 seconds', desc: 'Not 30 minutes. Automated routing means your hottest prospects get instant attention.' },
-              { icon: <Bot className="w-7 h-7 text-purple-400" />, title: 'Answer 90% of support queries', desc: 'AI chatbots handle the FAQs. Your team handles the complex work that needs a human.' },
-              { icon: <Database className="w-7 h-7 text-blue-400" />, title: 'Sync every tool you use', desc: 'CRM, email, invoicing, project management — all connected. Zero manual entry.' },
-              { icon: <Zap className="w-7 h-7 text-orange-400" />, title: 'Onboard clients automatically', desc: 'From signed proposal to welcome email to channel setup — zero clicks from your team.' },
-              { icon: <Users className="w-7 h-7 text-green-400" />, title: 'Score & qualify leads with AI', desc: 'Not all leads are equal. Scoring models prioritize the ones ready to buy.' },
-              { icon: <Shield className="w-7 h-7 text-red-400" />, title: 'Never lose a lead again', desc: 'Automated follow-ups across email, SMS, and WhatsApp until they buy — or say no.' },
+              { icon: <Clock className="w-7 h-7 text-vedixx-primary" />, title: 'Respond to leads in 30 seconds', desc: 'Not 30 minutes. Automated routing means your hottest prospects get instant attention.' },
+              { icon: <Bot className="w-7 h-7 text-vedixx-primary" />, title: 'Answer 90% of support queries', desc: 'AI chatbots handle the FAQs. Your team handles the complex work that needs a human.' },
+              { icon: <Database className="w-7 h-7 text-vedixx-primary" />, title: 'Sync every tool you use', desc: 'CRM, email, invoicing, project management — all connected. Zero manual entry.' },
+              { icon: <Zap className="w-7 h-7 text-vedixx-primary" />, title: 'Onboard clients automatically', desc: 'From signed proposal to welcome email to channel setup — zero clicks from your team.' },
+              { icon: <Users className="w-7 h-7 text-vedixx-primary" />, title: 'Score & qualify leads with AI', desc: 'Not all leads are equal. Scoring models prioritize the ones ready to buy.' },
+              { icon: <Shield className="w-7 h-7 text-vedixx-primary" />, title: 'Never lose a lead again', desc: 'Automated follow-ups across email, SMS, and WhatsApp until they buy — or say no.' },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -163,7 +163,7 @@ const AutomationContent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:bg-white/[0.06] hover:border-purple-500/20 transition-all group"
+                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:bg-white/[0.06] hover:border-vedixx-primary/20 transition-all group"
               >
                 <div className="mb-4 sm:mb-5 w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   {item.icon}
@@ -180,7 +180,7 @@ const AutomationContent = () => {
       <section id="capabilities" className="py-12 sm:py-24 bg-vedixx-card/30 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <span className="text-purple-400 font-bold tracking-wider uppercase text-xs sm:text-sm">
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
               Core Capabilities
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
@@ -198,7 +198,7 @@ const AutomationContent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="p-6 sm:p-8 bg-vedixx-bg/60 rounded-2xl border border-white/5 hover:border-purple-500/20 transition-all group"
+                className="p-6 sm:p-8 bg-vedixx-bg/60 rounded-2xl border border-white/5 hover:border-vedixx-primary/20 transition-all group"
               >
                 <div className="mb-4 sm:mb-5 w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   {c.icon}
@@ -215,7 +215,7 @@ const AutomationContent = () => {
       <section id="how-it-works" className="py-12 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp} className="text-center mb-12 sm:mb-16">
-            <span className="text-purple-400 font-bold tracking-wider uppercase text-xs sm:text-sm">Our Process</span>
+            <span className="text-vedixx-primary font-bold tracking-wider uppercase text-xs sm:text-sm">Our Process</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
               How We Build Your Autopilot
             </h2>
@@ -226,10 +226,10 @@ const AutomationContent = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {[
-              { icon: <Workflow className="w-6 h-6" />, step: '01', title: 'Workflow Audit', desc: "We map every manual process — every copy-paste, spreadsheet lookup, and 'I forgot to send that email'. We find the time-killers.", color: 'text-blue-400', bg: 'bg-blue-500/10' },
-              { icon: <GitBranch className="w-6 h-6" />, step: '02', title: 'System Architecture', desc: 'We design the logic — which tool triggers which action and where the data flows. The blueprint for your business brain.', color: 'text-purple-400', bg: 'bg-purple-500/10' },
-              { icon: <Cpu className="w-6 h-6" />, step: '03', title: 'Build & Connect', desc: 'Using n8n, Zapier, Make, and custom APIs, we wire your CRM, email, and invoicing into one living ecosystem.', color: 'text-green-400', bg: 'bg-green-500/10' },
-              { icon: <CheckCircle2 className="w-6 h-6" />, step: '04', title: 'Test & Hand Over', desc: 'We stress-test every edge case, then train your team on the system they now own — with full docs and support.', color: 'text-yellow-400', bg: 'bg-yellow-500/10' },
+              { icon: <Workflow className="w-6 h-6" />, step: '01', title: 'Workflow Audit', desc: "We map every manual process — every copy-paste, spreadsheet lookup, and 'I forgot to send that email'. We find the time-killers.", color: 'text-vedixx-primary', bg: 'bg-vedixx-primary/10' },
+              { icon: <GitBranch className="w-6 h-6" />, step: '02', title: 'System Architecture', desc: 'We design the logic — which tool triggers which action and where the data flows. The blueprint for your business brain.', color: 'text-vedixx-primary', bg: 'bg-vedixx-primary/10' },
+              { icon: <Cpu className="w-6 h-6" />, step: '03', title: 'Build & Connect', desc: 'Using n8n, Zapier, Make, and custom APIs, we wire your CRM, email, and invoicing into one living ecosystem.', color: 'text-vedixx-primary', bg: 'bg-vedixx-primary/10' },
+              { icon: <CheckCircle2 className="w-6 h-6" />, step: '04', title: 'Test & Hand Over', desc: 'We stress-test every edge case, then train your team on the system they now own — with full docs and support.', color: 'text-vedixx-primary', bg: 'bg-vedixx-primary/10' },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -237,7 +237,7 @@ const AutomationContent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:border-purple-500/20 transition-all"
+                className="p-6 sm:p-8 bg-vedixx-card/40 rounded-2xl border border-white/5 hover:border-vedixx-primary/20 transition-all"
               >
                 <div className="flex items-center justify-between mb-4 sm:mb-6">
                   <div className={`w-12 h-12 rounded-xl ${item.bg} ${item.color} flex items-center justify-center`}>
@@ -266,7 +266,7 @@ const AutomationContent = () => {
             {['n8n', 'Zapier', 'Make (Integromat)', 'Respond.io', 'OpenAI API', 'Airtable', 'HubSpot', 'Slack API', 'WhatsApp Business API', 'Google Sheets API', 'Stripe', 'Calendly'].map((tech, i) => (
               <span
                 key={i}
-                className="px-4 sm:px-5 py-2 sm:py-3 rounded-xl bg-vedixx-bg border border-white/10 text-xs sm:text-sm font-semibold text-gray-300 hover:text-white hover:border-purple-500/30 transition-all cursor-default"
+                className="px-4 sm:px-5 py-2 sm:py-3 rounded-xl bg-vedixx-bg border border-white/10 text-xs sm:text-sm font-semibold text-gray-300 hover:text-white hover:border-vedixx-primary/30 transition-all cursor-default"
               >
                 {tech}
               </span>
@@ -276,7 +276,7 @@ const AutomationContent = () => {
       </section>
 
       {/* FAQ */}
-      <FAQ faqs={automationFaqs} accent="text-purple-400" eyebrow="Automation FAQ" />
+      <FAQ faqs={automationFaqs} accent="text-vedixx-primary" eyebrow="Automation FAQ" />
 
       {/* CTA */}
       <section className="py-12 sm:py-20 text-center">
@@ -290,7 +290,7 @@ const AutomationContent = () => {
           <motion.div {...fadeUp}>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-vedixx-primary text-white px-8 sm:px-12 py-3.5 sm:py-6 rounded-full font-bold text-base sm:text-xl hover:bg-purple-600 transition-all shadow-2xl hover:-translate-y-1"
+              className="inline-flex items-center gap-2 bg-vedixx-primary text-white px-8 sm:px-12 py-3.5 sm:py-6 rounded-full font-bold text-base sm:text-xl hover:bg-vedixx-primary transition-all shadow-2xl hover:-translate-y-1"
             >
               Book a Free Automation Audit
               <ArrowRight className="w-5 h-5" />

@@ -253,7 +253,7 @@ const Testimonials = () => {
                     <span className="px-2 py-0.5 rounded bg-vedixx-primary/10 text-vedixx-primary text-[10px] font-semibold">
                       {testimonial.industry}
                     </span>
-                    <span className="px-2 py-0.5 rounded bg-green-500/10 text-green-400 text-[10px] font-semibold">
+                    <span className="px-2 py-0.5 rounded bg-vedixx-primary/10 text-vedixx-primary text-[10px] font-semibold">
                       {testimonial.growth}
                     </span>
                   </div>

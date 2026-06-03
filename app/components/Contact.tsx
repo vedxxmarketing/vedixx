@@ -256,7 +256,7 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="p-4 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium flex items-center gap-2"
+                    className="p-4 rounded-lg bg-vedixx-primary/10 border border-vedixx-primary/20 text-vedixx-primary text-sm font-medium flex items-center gap-2"
                   >
                     <CheckCircle2 className="w-5 h-5" />
                     Message sent! We&apos;ll get back to you shortly.
@@ -267,7 +267,7 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-medium"
+                    className="p-4 rounded-lg bg-vedixx-primary/10 border border-vedixx-primary/20 text-vedixx-primary text-sm font-medium"
                   >
                     Something went wrong. Please email us directly at {CONTACT.email}
                   </motion.div>

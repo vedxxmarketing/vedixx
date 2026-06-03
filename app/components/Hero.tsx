@@ -46,8 +46,8 @@ const Hero = () => {
             className="inline-flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-white/[0.06] sm:bg-white/[0.04] border border-white/[0.08] sm:backdrop-blur-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="hidden sm:inline-flex animate-ping absolute h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              <span className="hidden sm:inline-flex animate-ping absolute h-full w-full rounded-full bg-vedixx-primary opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-vedixx-primary" />
             </span>
             <span className="text-[11px] sm:text-sm font-medium text-white/60 tracking-wide">
               Taking on new growth partners
@@ -139,7 +139,7 @@ const Hero = () => {
             <div className="flex items-center gap-2">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 fill-amber-400" />
+                  <Star key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-vedixx-primary fill-vedixx-primary" />
                 ))}
               </div>
               <span className="text-white/70 font-medium">Rated 5/5 by 50+ brands</span>

@@ -26,71 +26,71 @@ const categories = [
   {
     title: 'Digital Marketing',
     subtitle: 'Unified SEO + Paid systems that drive real revenue.',
-    icon: <Megaphone className="w-8 h-8 text-green-400" />,
+    icon: <Megaphone className="w-8 h-8 text-vedixx-primary" />,
     link: '/services/digital-marketing',
     accent: 'green',
     items: [
-      { icon: <Target className="w-5 h-5 text-red-400" />, text: 'Google & Meta Ads' },
-      { icon: <Search className="w-5 h-5 text-blue-400" />, text: 'SEO Growth Systems' },
-      { icon: <BarChart3 className="w-5 h-5 text-green-400" />, text: 'Revenue Attribution' },
+      { icon: <Target className="w-5 h-5 text-vedixx-primary" />, text: 'Google & Meta Ads' },
+      { icon: <Search className="w-5 h-5 text-vedixx-primary" />, text: 'SEO Growth Systems' },
+      { icon: <BarChart3 className="w-5 h-5 text-vedixx-primary" />, text: 'Revenue Attribution' },
     ],
   },
   {
     title: 'Automation & AI',
     subtitle: 'Your team thinks. We automate everything else.',
-    icon: <Bot className="w-8 h-8 text-purple-400" />,
+    icon: <Bot className="w-8 h-8 text-vedixx-primary" />,
     link: '/services/automation',
     accent: 'purple',
     items: [
-      { icon: <Workflow className="w-5 h-5 text-orange-400" />, text: 'n8n & Zapier Workflows' },
-      { icon: <MessageSquare className="w-5 h-5 text-blue-400" />, text: 'AI Chatbots & Support' },
-      { icon: <Cpu className="w-5 h-5 text-purple-400" />, text: 'CRM & Lead Automation' },
+      { icon: <Workflow className="w-5 h-5 text-vedixx-primary" />, text: 'n8n & Zapier Workflows' },
+      { icon: <MessageSquare className="w-5 h-5 text-vedixx-primary" />, text: 'AI Chatbots & Support' },
+      { icon: <Cpu className="w-5 h-5 text-vedixx-primary" />, text: 'CRM & Lead Automation' },
     ],
   },
   {
     title: 'Web Development',
     subtitle: 'Sites that sell, not just sit there looking pretty.',
-    icon: <Monitor className="w-8 h-8 text-cyan-400" />,
+    icon: <Monitor className="w-8 h-8 text-vedixx-primary" />,
     link: '/services/web-development',
     accent: 'cyan',
     items: [
-      { icon: <Globe className="w-5 h-5 text-cyan-400" />, text: 'Performance Websites' },
-      { icon: <Code2 className="w-5 h-5 text-indigo-400" />, text: 'Custom Web Apps' },
-      { icon: <Smartphone className="w-5 h-5 text-pink-400" />, text: 'Mobile-First Design' },
+      { icon: <Globe className="w-5 h-5 text-vedixx-primary" />, text: 'Performance Websites' },
+      { icon: <Code2 className="w-5 h-5 text-vedixx-primary" />, text: 'Custom Web Apps' },
+      { icon: <Smartphone className="w-5 h-5 text-vedixx-primary" />, text: 'Mobile-First Design' },
     ],
   },
   {
     title: 'E-Commerce Growth',
     subtitle: 'Stores that sell — not just open for business.',
-    icon: <Store className="w-8 h-8 text-amber-400" />,
+    icon: <Store className="w-8 h-8 text-vedixx-primary" />,
     link: '/services/cms-solutions',
     accent: 'amber',
     items: [
-      { icon: <ShoppingCart className="w-5 h-5 text-amber-400" />, text: 'Shopify Development' },
-      { icon: <Layers className="w-5 h-5 text-blue-400" />, text: 'WooCommerce Experts' },
-      { icon: <CreditCard className="w-5 h-5 text-green-400" />, text: 'Checkout Optimization' },
+      { icon: <ShoppingCart className="w-5 h-5 text-vedixx-primary" />, text: 'Shopify Development' },
+      { icon: <Layers className="w-5 h-5 text-vedixx-primary" />, text: 'WooCommerce Experts' },
+      { icon: <CreditCard className="w-5 h-5 text-vedixx-primary" />, text: 'Checkout Optimization' },
     ],
   },
 ];
 
 // Static class maps so Tailwind keeps the per-card accent colors.
 const accentRing: Record<string, string> = {
-  green: 'hover:border-green-500/40 hover:shadow-[0_0_40px_-5px_rgba(34,197,94,0.25)]',
-  purple: 'hover:border-purple-500/40 hover:shadow-[0_0_40px_-5px_rgba(168,85,247,0.25)]',
-  cyan: 'hover:border-cyan-500/40 hover:shadow-[0_0_40px_-5px_rgba(34,211,238,0.25)]',
-  amber: 'hover:border-amber-500/40 hover:shadow-[0_0_40px_-5px_rgba(251,191,36,0.25)]',
+  green: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
+  purple: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
+  cyan: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
+  amber: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
 };
 const accentText: Record<string, string> = {
-  green: 'group-hover:text-green-400',
-  purple: 'group-hover:text-purple-400',
-  cyan: 'group-hover:text-cyan-400',
-  amber: 'group-hover:text-amber-400',
+  green: 'group-hover:text-vedixx-primary',
+  purple: 'group-hover:text-vedixx-primary',
+  cyan: 'group-hover:text-vedixx-primary',
+  amber: 'group-hover:text-vedixx-primary',
 };
 const accentCta: Record<string, string> = {
-  green: 'text-green-400 bg-green-500/10 group-hover:bg-green-500/20',
-  purple: 'text-purple-400 bg-purple-500/10 group-hover:bg-purple-500/20',
-  cyan: 'text-cyan-400 bg-cyan-500/10 group-hover:bg-cyan-500/20',
-  amber: 'text-amber-400 bg-amber-500/10 group-hover:bg-amber-500/20',
+  green: 'text-vedixx-primary bg-vedixx-primary/10 group-hover:bg-vedixx-primary/20',
+  purple: 'text-vedixx-primary bg-vedixx-primary/10 group-hover:bg-vedixx-primary/20',
+  cyan: 'text-vedixx-primary bg-vedixx-primary/10 group-hover:bg-vedixx-primary/20',
+  amber: 'text-vedixx-primary bg-vedixx-primary/10 group-hover:bg-vedixx-primary/20',
 };
 
 const Services = () => {
@@ -100,7 +100,7 @@ const Services = () => {
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[10%] left-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/5 rounded-full blur-[120px] animate-pulse"></div>
         <div
-          className="absolute bottom-[10%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-purple-900/5 rounded-full blur-[120px] animate-pulse"
+          className="absolute bottom-[10%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/5 rounded-full blur-[120px] animate-pulse"
           style={{ animationDelay: '2s' }}
         ></div>
       </div>
