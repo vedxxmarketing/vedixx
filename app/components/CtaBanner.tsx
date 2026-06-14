@@ -12,11 +12,10 @@ const CtaBanner = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-vedixx-primary/20 via-vedixx-card to-vedixx-bg px-6 sm:px-12 py-12 sm:py-20 text-center"
+          className="relative overflow-hidden rounded-3xl border border-white/[0.07] bg-vedixx-card px-6 sm:px-12 py-12 sm:py-20 text-center"
         >
-          {/* Glow accents */}
-          <div className="absolute -top-1/2 left-1/4 w-[400px] h-[400px] bg-vedixx-primary/20 rounded-full blur-[120px] pointer-events-none" />
-          <div className="absolute -bottom-1/2 right-1/4 w-[400px] h-[400px] bg-vedixx-primary/15 rounded-full blur-[120px] pointer-events-none" />
+          {/* Single subtle contained glow at the base — matches the hero */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[45%] h-[40%] rounded-[50%] bg-vedixx-ember/[0.12] blur-[100px] pointer-events-none" />
 
           <div className="relative z-10 max-w-3xl mx-auto space-y-5 sm:space-y-7">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-white/80 text-xs sm:text-sm font-semibold">
@@ -34,7 +33,7 @@ const CtaBanner = () => {
             <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-8 sm:px-10 py-4 rounded-full font-bold text-base sm:text-lg hover:bg-vedixx-primary hover:text-white transition-all duration-300 hover:-translate-y-0.5 shadow-[0_0_40px_rgba(255,255,255,0.15)]"
+                className="group inline-flex items-center justify-center gap-2 bg-vedixx-ember text-white px-8 sm:px-10 py-4 rounded-full font-bold text-base sm:text-lg hover:bg-vedixx-emberDeep transition-all duration-300 hover:-translate-y-0.5 shadow-ember"
               >
                 Book My Free Strategy Call
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

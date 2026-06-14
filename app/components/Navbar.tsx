@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CONTACT } from '../site.config';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,16 +61,9 @@ const Navbar = () => {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="relative h-7 w-[120px] sm:h-9 sm:w-[156px] lg:h-10 lg:w-[174px]"
+                className="h-7 sm:h-9 lg:h-10 transition-[filter] duration-300 group-hover:drop-shadow-[0_0_14px_rgba(255,90,31,0.55)]"
               >
-                <Image
-                  src="/logo.png"
-                  alt="Vedixx"
-                  fill
-                  priority
-                  sizes="174px"
-                  className="object-contain object-left transition-[filter] duration-300 group-hover:drop-shadow-[0_0_15px_rgba(138,149,201,0.6)]"
-                />
+                <Logo className="h-full" />
               </motion.div>
             </Link>
           </div>
@@ -213,7 +206,7 @@ const Navbar = () => {
               ))}
               <Link
                 href="/#contact"
-                className="block mt-4 text-center bg-white text-vedixx-bg px-5 py-3 rounded-full text-base font-bold hover:bg-gray-200 transition-all shadow-lg shadow-white/10"
+                className="block mt-4 text-center bg-vedixx-ember text-white px-5 py-3 rounded-full text-base font-bold hover:bg-vedixx-emberDeep transition-all shadow-ember-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Book a Strategy Call

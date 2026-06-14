@@ -58,8 +58,8 @@ const CMSSolutionsContent = () => {
       {/* HERO */}
       <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-20">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[10%] left-[15%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-[10%] left-[15%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.06] rounded-full blur-[150px]"></div>
+          <div className="absolute bottom-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
@@ -80,7 +80,7 @@ const CMSSolutionsContent = () => {
           >
             Don&apos;t Just Open a Store.
             <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vedixx-primary to-vedixx-primary">
+            <span className="text-ember-gradient">
               Build a Sales Machine.
             </span>
           </motion.h1>
@@ -103,7 +103,7 @@ const CMSSolutionsContent = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-primary hover:text-black transition-all shadow-[0_0_40px_rgba(102, 117, 198,0.2)]"
+              className="inline-flex items-center justify-center gap-2 bg-vedixx-ember text-white px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-emberDeep hover:-translate-y-0.5 transition-all duration-300 shadow-ember"
             >
               Get a Free Store Audit
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -159,7 +159,7 @@ const CMSSolutionsContent = () => {
               </p>
               <ul className="space-y-3 sm:space-y-4">
                 {pains.map((pain, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-300">
+                  <li key={i} className="flex items-start gap-3 text-white/75">
                     <span className="mt-1.5 w-2 h-2 rounded-full bg-vedixx-primary shrink-0"></span>
                     <span className="text-sm sm:text-base">{pain}</span>
                   </li>
@@ -183,7 +183,7 @@ const CMSSolutionsContent = () => {
                     {stat.icon}
                   </div>
                   <div className={`text-3xl sm:text-4xl font-bold ${stat.color} mb-1`}>{stat.number}</div>
-                  <div className="text-xs sm:text-sm text-gray-400">{stat.label}</div>
+                  <div className="text-xs sm:text-sm text-vedixx-muted">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -220,7 +220,7 @@ const CMSSolutionsContent = () => {
                   {item.icon}
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+                <p className="text-xs sm:text-sm text-vedixx-muted leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -266,12 +266,12 @@ const CMSSolutionsContent = () => {
                   {platform.icon}
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{platform.title}</h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed mb-4 sm:mb-6">{platform.desc}</p>
+                <p className="text-sm sm:text-base text-vedixx-muted leading-relaxed mb-4 sm:mb-6">{platform.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {platform.tags.map((tag, j) => (
                     <span
                       key={j}
-                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300 font-semibold"
+                      className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs sm:text-sm text-white/75 font-semibold"
                     >
                       {tag}
                     </span>
@@ -316,7 +316,7 @@ const CMSSolutionsContent = () => {
                   <span className={`text-3xl sm:text-4xl font-bold opacity-20 ${item.color}`}>{item.step}</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{item.title}</h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed">{item.desc}</p>
+                <p className="text-sm sm:text-base text-vedixx-muted leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>

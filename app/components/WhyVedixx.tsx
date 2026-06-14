@@ -41,7 +41,7 @@ const WhyVedixx = () => {
   return (
     <section className="relative py-16 sm:py-24 bg-vedixx-card overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-vedixx-primary/5 rounded-full blur-[150px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ const WhyVedixx = () => {
                 {p.icon}
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{p.title}</h3>
-              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">{p.desc}</p>
+              <p className="text-sm sm:text-base text-vedixx-muted leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -101,7 +101,7 @@ const WhyVedixx = () => {
                   <span className="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-vedixx-primary/10 text-vedixx-primary flex items-center justify-center">
                     <X className="w-3.5 h-3.5" />
                   </span>
-                  <span className="text-sm sm:text-base text-gray-400">{item}</span>
+                  <span className="text-sm sm:text-base text-vedixx-muted">{item}</span>
                 </li>
               ))}
             </ul>
@@ -113,7 +113,7 @@ const WhyVedixx = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-vedixx-primary/10 to-vedixx-card border border-vedixx-primary/30 shadow-[0_0_40px_-10px_rgba(102, 117, 198,0.3)]"
+            className="relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-vedixx-ember/[0.12] to-vedixx-card border border-vedixx-ember/30 shadow-[0_0_50px_-10px_rgba(255,90,31,0.35)]"
           >
             <div className="absolute -top-3 right-6 px-3 py-1 rounded-full bg-vedixx-primary text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase shadow-lg">
               The Vedixx Way
@@ -125,7 +125,7 @@ const WhyVedixx = () => {
                   <span className="mt-0.5 shrink-0 w-6 h-6 rounded-full bg-vedixx-primary/20 text-vedixx-primary flex items-center justify-center">
                     <CheckCircle2 className="w-3.5 h-3.5" />
                   </span>
-                  <span className="text-sm sm:text-base text-gray-200">{item}</span>
+                  <span className="text-sm sm:text-base text-white/85">{item}</span>
                 </li>
               ))}
             </ul>

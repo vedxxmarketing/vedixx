@@ -87,10 +87,12 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-vedixx-primary to-vedixx-primary rounded-2xl opacity-15 blur-2xl"></div>
+            <div className="absolute -inset-4 bg-vedixx-ember/10 rounded-2xl opacity-60 blur-2xl"></div>
             <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-vedixx-card">
-              <div className="aspect-[4/3] sm:aspect-video bg-gray-800 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"></div>
+              <div className="aspect-[4/3] sm:aspect-video bg-vedixx-bgDeep relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-vedixx-card to-vedixx-bgDeep"></div>
+                {/* Subtle contained ember glow behind the stat — matches the hero */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1/2 w-2/3 rounded-[50%] bg-vedixx-ember/15 blur-[70px] pointer-events-none"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-6 sm:p-8">
                     <motion.div

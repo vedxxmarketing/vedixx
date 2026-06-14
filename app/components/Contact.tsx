@@ -178,7 +178,7 @@ const Contact = () => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-gray-600 focus:bg-white/5"
+                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-white/30 focus:bg-white/5"
                   placeholder="John Doe"
                   disabled={status === 'sending'}
                 />
@@ -194,7 +194,7 @@ const Contact = () => {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-gray-600 focus:bg-white/5"
+                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-white/30 focus:bg-white/5"
                   placeholder="john@company.com"
                   disabled={status === 'sending'}
                 />
@@ -209,7 +209,7 @@ const Contact = () => {
                   id="company"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-gray-600 focus:bg-white/5"
+                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-white/30 focus:bg-white/5"
                   placeholder="Company Ltd."
                   disabled={status === 'sending'}
                 />
@@ -225,7 +225,7 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-gray-600 resize-none focus:bg-white/5"
+                  className="w-full px-4 py-3 bg-vedixx-bg border border-white/10 rounded-lg focus:outline-none focus:border-vedixx-primary focus:ring-1 focus:ring-vedixx-primary transition-all text-white placeholder-white/30 resize-none focus:bg-white/5"
                   placeholder="Tell us about your project..."
                   disabled={status === 'sending'}
                 />
@@ -233,7 +233,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="w-full bg-white text-vedixx-bg py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-200 transition-all transform hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] flex items-center justify-center gap-2 relative overflow-hidden group disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-vedixx-ember text-white py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-vedixx-emberDeep transition-all transform hover:-translate-y-1 shadow-ember-sm hover:shadow-ember flex items-center justify-center gap-2 relative overflow-hidden group disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {status === 'sending' ? (

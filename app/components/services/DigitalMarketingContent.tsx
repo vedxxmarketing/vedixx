@@ -84,8 +84,8 @@ const DigitalMarketingContent = () => {
       {/* HERO */}
       <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-20">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-[10%] right-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.06] rounded-full blur-[150px]"></div>
+          <div className="absolute bottom-[10%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
@@ -106,7 +106,7 @@ const DigitalMarketingContent = () => {
           >
             Stop Running Ads.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vedixx-primary to-vedixx-primary">
+            <span className="text-ember-gradient">
               Start Building Revenue.
             </span>
           </motion.h1>
@@ -140,7 +140,7 @@ const DigitalMarketingContent = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-primary hover:text-black transition-all shadow-[0_0_40px_rgba(102, 117, 198,0.2)]"
+              className="inline-flex items-center justify-center gap-2 bg-vedixx-ember text-white px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-emberDeep hover:-translate-y-0.5 transition-all duration-300 shadow-ember"
             >
               Get My Free Growth Audit
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -204,7 +204,7 @@ const DigitalMarketingContent = () => {
                   <div className="shrink-0 w-9 h-9 rounded-lg bg-vedixx-primary/10 text-vedixx-primary flex items-center justify-center">
                     {p.icon}
                   </div>
-                  <span className="text-sm sm:text-base text-gray-300 leading-relaxed pt-1">{p.text}</span>
+                  <span className="text-sm sm:text-base text-white/75 leading-relaxed pt-1">{p.text}</span>
                 </li>
               ))}
             </motion.ul>
@@ -243,7 +243,7 @@ const DigitalMarketingContent = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-bold text-sm sm:text-base">{item.title}</h4>
-                      <p className="text-xs sm:text-sm text-gray-400">{item.desc}</p>
+                      <p className="text-xs sm:text-sm text-vedixx-muted">{item.desc}</p>
                     </div>
                   </li>
                 ))}
@@ -253,7 +253,7 @@ const DigitalMarketingContent = () => {
             <motion.div {...fadeUp} className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-vedixx-primary/10 to-vedixx-primary/10 blur-3xl"></div>
               <div className="relative border border-white/10 bg-vedixx-bg/50 backdrop-blur-xl rounded-2xl p-6 sm:p-8 space-y-6 sm:space-y-8">
-                <div className="text-center text-xs sm:text-sm font-mono text-gray-500">REVENUE FLOW</div>
+                <div className="text-center text-xs sm:text-sm font-mono text-white/40">REVENUE FLOW</div>
                 <div className="space-y-3 sm:space-y-4">
                   {[
                     { icon: <Search className="w-5 h-5 sm:w-6 sm:h-6" />, color: 'blue', title: 'Traffic Source', sub: 'SEO + Paid Combined' },
@@ -264,7 +264,7 @@ const DigitalMarketingContent = () => {
                     <div key={i}>
                       <div
                         className={`flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-white/5 border ${
-                          step.highlight ? 'border-vedixx-primary/30 shadow-[0_0_20px_rgba(102, 117, 198,0.1)]' : 'border-white/5'
+                          step.highlight ? 'border-vedixx-ember/30 shadow-[0_0_25px_-4px_rgba(255,90,31,0.18)]' : 'border-white/5'
                         }`}
                       >
                         <div className="p-2 sm:p-3 bg-vedixx-primary/20 rounded-lg text-vedixx-primary">
@@ -272,10 +272,10 @@ const DigitalMarketingContent = () => {
                         </div>
                         <div>
                           <div className="text-white font-bold text-sm sm:text-base">{step.title}</div>
-                          <div className="text-[10px] sm:text-xs text-gray-400">{step.sub}</div>
+                          <div className="text-[10px] sm:text-xs text-vedixx-muted">{step.sub}</div>
                         </div>
                       </div>
-                      {i < 3 && <ArrowRight className="mx-auto text-gray-600 rotate-90 w-4 h-4 my-1" />}
+                      {i < 3 && <ArrowRight className="mx-auto text-white/30 rotate-90 w-4 h-4 my-1" />}
                     </div>
                   ))}
                 </div>
@@ -313,7 +313,7 @@ const DigitalMarketingContent = () => {
                   {d.icon}
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3">{d.title}</h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">{d.desc}</p>
+                <p className="text-xs sm:text-sm text-vedixx-muted leading-relaxed">{d.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -351,7 +351,7 @@ const DigitalMarketingContent = () => {
               >
                 <div className="mb-4 sm:mb-6">{f.icon}</div>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">{f.title}</h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed">{f.desc}</p>
+                <p className="text-sm sm:text-base text-vedixx-muted leading-relaxed">{f.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -385,7 +385,7 @@ const DigitalMarketingContent = () => {
                   </div>
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-sm sm:text-base text-gray-400">{item.desc}</p>
+                    <p className="text-sm sm:text-base text-vedixx-muted">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -404,13 +404,13 @@ const DigitalMarketingContent = () => {
                       s.highlight ? 'border border-vedixx-primary/30' : ''
                     }`}
                   >
-                    <span className={`text-sm sm:text-base ${s.highlight ? 'text-white font-bold' : 'text-gray-300'}`}>
+                    <span className={`text-sm sm:text-base ${s.highlight ? 'text-white font-bold' : 'text-white/75'}`}>
                       {s.step}
                     </span>
                     <span className="text-xs sm:text-sm text-vedixx-primary font-bold">{s.time}</span>
                   </div>
                 ))}
-                <p className="text-[10px] sm:text-xs text-center text-gray-500 mt-3">
+                <p className="text-[10px] sm:text-xs text-center text-white/40 mt-3">
                   *We kill losing ads ruthlessly to protect your budget.
                 </p>
               </div>
@@ -432,7 +432,7 @@ const DigitalMarketingContent = () => {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
               Without Tracking, Scaling is <span className="text-vedixx-primary">Guessing.</span>
             </h2>
-            <p className="text-base sm:text-xl text-gray-300 max-w-3xl mx-auto mb-8 sm:mb-10">
+            <p className="text-base sm:text-xl text-white/75 max-w-3xl mx-auto mb-8 sm:mb-10">
               We set up enterprise-grade tracking before spending a cent. Every touchpoint mapped, every dollar
               attributed — so you scale on data, not hope.
             </p>

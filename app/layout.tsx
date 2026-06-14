@@ -15,7 +15,7 @@ const inter = Inter({
 
 const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-outfit',
   display: 'swap',
 });
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0a0a0a',
+  themeColor: '#08080a',
 };
 
 // Organization structured data (JSON-LD) for richer search results.
@@ -126,17 +126,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
 
-        <div className="min-h-screen bg-vedixx-bg text-vedixx-text font-body selection:bg-vedixx-primary selection:text-white flex flex-col overflow-x-hidden">
+        {/* Cinematic base — sits behind content; shows through transparent sections */}
+        <div className="pointer-events-none fixed inset-0 z-0" aria-hidden="true">
+          <div className="absolute inset-0 bg-[radial-gradient(125%_125%_at_50%_0%,transparent_45%,#050506_100%)]" />
+          <div className="absolute inset-0 bg-grid-faint bg-[size:64px_64px] opacity-[0.4] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
+        </div>
+
+        <div className="relative z-10 min-h-screen bg-transparent text-vedixx-text font-body selection:bg-vedixx-primary selection:text-white flex flex-col overflow-x-hidden">
           <Navbar />
           <div className="flex-grow">{children}</div>
           <WhatsAppCTA />
 
           {/* Footer */}
-          <footer className="py-8 text-center text-vedixx-muted text-sm border-t border-white/5 bg-vedixx-bg">
+          <footer className="py-8 text-center text-vedixx-muted text-sm border-t border-white/5 bg-vedixx-bgDeep">
             <div className="max-w-7xl mx-auto px-4">
               <p>&copy; {new Date().getFullYear()} {SITE_NAME}. All Rights Reserved.</p>
             </div>
           </footer>
+        </div>
+
+        {/* Film-grain + soft vignette overlay — sits above sections so the texture reads everywhere */}
+        <div className="pointer-events-none fixed inset-0 z-[55]" aria-hidden="true">
+          <div className="grain absolute inset-0 opacity-[0.045] mix-blend-soft-light" />
+          <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-10%,transparent_58%,rgba(5,5,6,0.5)_100%)]" />
         </div>
       </body>
     </html>

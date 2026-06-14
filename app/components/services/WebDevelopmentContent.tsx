@@ -58,8 +58,8 @@ const WebDevelopmentContent = () => {
       {/* HERO */}
       <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden py-12 sm:py-20">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[15%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-[5%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-[15%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.06] rounded-full blur-[150px]"></div>
+          <div className="absolute bottom-[5%] left-[10%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
@@ -79,7 +79,7 @@ const WebDevelopmentContent = () => {
             className="text-3xl sm:text-5xl lg:text-8xl font-bold font-heading text-white tracking-tight leading-[1.1]"
           >
             Your Website Should <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vedixx-primary to-vedixx-primary">
+            <span className="text-ember-gradient">
               Sell, Not Just Sit There.
             </span>
           </motion.h1>
@@ -102,7 +102,7 @@ const WebDevelopmentContent = () => {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-vedixx-bg px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-primary hover:text-black transition-all shadow-[0_0_40px_rgba(102, 117, 198,0.2)]"
+              className="inline-flex items-center justify-center gap-2 bg-vedixx-ember text-white px-6 sm:px-10 py-3.5 sm:py-5 rounded-full font-bold text-sm sm:text-lg hover:bg-vedixx-emberDeep hover:-translate-y-0.5 transition-all duration-300 shadow-ember"
             >
               Start My Project
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -168,7 +168,7 @@ const WebDevelopmentContent = () => {
                   {item.icon}
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+                <p className="text-xs sm:text-sm text-vedixx-muted leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -200,7 +200,7 @@ const WebDevelopmentContent = () => {
                   {b.icon}
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-white mb-2">{b.title}</h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">{b.desc}</p>
+                <p className="text-xs sm:text-sm text-vedixx-muted leading-relaxed">{b.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -239,7 +239,7 @@ const WebDevelopmentContent = () => {
                   <span className={`text-3xl sm:text-4xl font-bold opacity-20 ${item.color}`}>{item.step}</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">{item.title}</h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed">{item.desc}</p>
+                <p className="text-sm sm:text-base text-vedixx-muted leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -259,7 +259,7 @@ const WebDevelopmentContent = () => {
             {['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Vercel', 'Netlify', 'Sanity CMS', 'Strapi', 'PostgreSQL', 'Supabase', 'Cloudflare', 'Git/GitHub'].map((tech, i) => (
               <span
                 key={i}
-                className="px-4 sm:px-5 py-2 sm:py-3 rounded-xl bg-vedixx-bg border border-white/10 text-xs sm:text-sm font-semibold text-gray-300 hover:text-white hover:border-vedixx-primary/30 transition-all cursor-default"
+                className="px-4 sm:px-5 py-2 sm:py-3 rounded-xl bg-vedixx-bg border border-white/10 text-xs sm:text-sm font-semibold text-white/75 hover:text-white hover:border-vedixx-primary/30 transition-all cursor-default"
               >
                 {tech}
               </span>

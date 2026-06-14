@@ -75,10 +75,10 @@ const categories = [
 
 // Static class maps so Tailwind keeps the per-card accent colors.
 const accentRing: Record<string, string> = {
-  green: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
-  purple: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
-  cyan: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
-  amber: 'hover:border-vedixx-primary/40 hover:shadow-[0_0_40px_-5px_rgba(102, 117, 198,0.25)]',
+  green: 'hover:border-vedixx-ember/40 hover:shadow-[0_0_45px_-5px_rgba(255,90,31,0.3)]',
+  purple: 'hover:border-vedixx-ember/40 hover:shadow-[0_0_45px_-5px_rgba(255,90,31,0.3)]',
+  cyan: 'hover:border-vedixx-ember/40 hover:shadow-[0_0_45px_-5px_rgba(255,90,31,0.3)]',
+  amber: 'hover:border-vedixx-ember/40 hover:shadow-[0_0_45px_-5px_rgba(255,90,31,0.3)]',
 };
 const accentText: Record<string, string> = {
   green: 'group-hover:text-vedixx-primary',
@@ -98,9 +98,9 @@ const Services = () => {
     <section id="services" className="relative py-16 sm:py-24 bg-vedixx-bg overflow-hidden">
       {/* Dynamic Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[10%] left-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/5 rounded-full blur-[120px] animate-pulse"></div>
+        <div className="absolute top-[10%] left-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]"></div>
         <div
-          className="absolute bottom-[10%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-primary/5 rounded-full blur-[120px] animate-pulse"
+          className="absolute bottom-[10%] right-[5%] w-72 sm:w-[500px] h-72 sm:h-[500px] bg-vedixx-ember/[0.05] rounded-full blur-[150px]"
           style={{ animationDelay: '2s' }}
         ></div>
       </div>
@@ -167,7 +167,7 @@ const Services = () => {
                       <div className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors">
                         <div className="w-4 h-4 [&>svg]:w-full [&>svg]:h-full">{item.icon}</div>
                       </div>
-                      <span className="text-xs sm:text-sm font-semibold text-gray-200 group-hover:text-white transition-colors">
+                      <span className="text-xs sm:text-sm font-semibold text-white/85 group-hover:text-white transition-colors">
                         {item.text}
                       </span>
                     </div>

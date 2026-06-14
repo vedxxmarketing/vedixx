@@ -21,14 +21,88 @@
   h6 {
     @apply font-heading font-bold tracking-tight;
   }
+
+  /* Ember-tinted text selection */
+  ::selection {
+    background: rgba(255, 90, 31, 0.28);
+    color: #fff;
+  }
+
+  /* Slim, dark, ember-thumbed scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #08080a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #26262b;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a40;
+  }
 }
 
 @layer utilities {
+  /* Warm-white gradient for primary headlines */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-gray-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/55;
   }
 
+  /* Ember gradient for accent words */
+  .text-ember-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(110deg, #ff8a4c 0%, #ff5a1f 45%, #ffb27a 100%);
+  }
+
+  /* Frosted dark glass card */
   .glass-panel {
-    @apply bg-vedixx-card/60 backdrop-blur-md border border-white/5;
+    @apply bg-vedixx-card/60 backdrop-blur-xl border border-white/[0.06];
+  }
+
+  /* Eyebrow / kicker label */
+  .kicker {
+    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-medium uppercase tracking-[0.25em] text-vedixx-muted;
+  }
+
+  /* The signature ember bloom (used behind heroes / sections) */
+  .ember-bloom {
+    background: radial-gradient(
+      circle at 50% 100%,
+      rgba(255, 138, 76, 0.65),
+      rgba(255, 90, 31, 0.4) 28%,
+      rgba(214, 58, 0, 0.18) 48%,
+      transparent 72%
+    );
+    filter: blur(8px);
+  }
+
+  /* Soft ember halo for orbs / accents */
+  .ember-glow {
+    box-shadow: 0 0 60px -10px rgba(255, 90, 31, 0.45);
+  }
+
+  /* Top hairline that glows ember in the center */
+  .hairline-ember {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 90, 31, 0.6),
+      transparent
+    );
+  }
+
+  /* Filmic grain overlay (fixed, sits above bg, below content) */
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 }

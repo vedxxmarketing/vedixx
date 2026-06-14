@@ -12,14 +12,16 @@ const ParticleBackground = () => {
     if (!ctx) return;
 
     let animationFrameId: number;
-    let particles: Particle[] = [];
+    let particles: Ember[] = [];
 
     // Detect mobile for performance
     const isMobile = window.innerWidth < 768;
 
     // Aggressively reduce on mobile for smooth performance
-    const particleCount = isMobile ? 12 : 50;
-    const connectionDistance = isMobile ? 80 : 150;
+    const particleCount = isMobile ? 14 : 46;
+
+    // Warm ember palette
+    const colors = ['255, 90, 31', '255, 138, 76', '255, 178, 122'];
 
     // Resize handling
     const resize = () => {
@@ -41,64 +43,79 @@ const ParticleBackground = () => {
       window.addEventListener('mousemove', handleMouseMove);
     }
 
-    class Particle {
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      size: number;
+    class Ember {
+      x!: number;
+      y!: number;
+      vx!: number;
+      vy!: number;
+      size!: number;
+      color!: string;
+      baseAlpha!: number;
+      flicker!: number;
 
-      constructor() {
+      constructor(initial = false) {
+        this.reset(initial);
+      }
+
+      reset(initial = false) {
         this.x = Math.random() * canvas!.width;
-        this.y = Math.random() * canvas!.height;
-        const speed = isMobile ? 0.2 : 0.5;
-        this.vx = (Math.random() - 0.5) * speed;
-        this.vy = (Math.random() - 0.5) * speed;
-        this.size = isMobile ? Math.random() * 1 + 0.3 : Math.random() * 1.5 + 0.5;
+        // New embers spawn near the bottom; on first init, scatter them
+        this.y = initial ? Math.random() * canvas!.height : canvas!.height + 10;
+        const speed = isMobile ? 0.25 : 0.45;
+        this.vx = (Math.random() - 0.5) * speed * 0.6;
+        this.vy = -(Math.random() * speed + 0.15); // drift upward
+        this.size = (isMobile ? Math.random() * 1.1 + 0.4 : Math.random() * 1.8 + 0.5);
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.baseAlpha = Math.random() * 0.4 + 0.25;
+        this.flicker = Math.random() * Math.PI * 2;
       }
 
       update() {
         this.x += this.vx;
         this.y += this.vy;
+        this.flicker += 0.06;
 
-        if (this.x < 0 || this.x > canvas!.width) this.vx *= -1;
-        if (this.y < 0 || this.y > canvas!.height) this.vy *= -1;
-
-        // Mouse interaction — desktop only
+        // Mouse interaction — desktop only (embers shy away from cursor)
         if (!isMobile) {
           const dx = mouse.x - this.x;
           const dy = mouse.y - this.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < 200) {
-            const forceDirectionX = dx / distance;
-            const forceDirectionY = dy / distance;
-            const force = (200 - distance) / 200;
-            this.vx -= forceDirectionX * force * 0.05;
-            this.vy -= forceDirectionY * force * 0.05;
+          if (distance < 160 && distance > 0) {
+            const force = (160 - distance) / 160;
+            this.vx -= (dx / distance) * force * 0.04;
+            this.vy -= (dy / distance) * force * 0.04;
           }
+        }
+
+        // Recycle once it floats off the top
+        if (this.y < -10 || this.x < -20 || this.x > canvas!.width + 20) {
+          this.reset();
         }
       }
 
       draw() {
         if (!ctx) return;
-        ctx.fillStyle = 'rgba(138, 149, 201, 0.4)';
+        const alpha = this.baseAlpha * (0.6 + 0.4 * Math.sin(this.flicker));
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+        ctx.shadowBlur = isMobile ? 6 : 12;
+        ctx.shadowColor = `rgba(${this.color}, 0.9)`;
         ctx.fill();
+        ctx.shadowBlur = 0;
       }
     }
 
     const init = () => {
       particles = [];
       for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
+        particles.push(new Ember(true));
       }
     };
 
-    // Aggressive throttle on mobile — skip every other frame
+    // Aggressive throttle on mobile — skip frames
     let frameCount = 0;
-    const skipFrames = isMobile ? 3 : 0;
+    const skipFrames = isMobile ? 2 : 0;
 
     const animate = () => {
       if (!ctx || !canvas) return;
@@ -110,39 +127,59 @@ const ParticleBackground = () => {
       }
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
-
-        // Connections — skip entirely on mobile for performance
-        if (!isMobile) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const distSq = dx * dx + dy * dy;
-
-            if (distSq < connectionDistance * connectionDistance) {
-              const distance = Math.sqrt(distSq);
-              ctx.beginPath();
-              ctx.strokeStyle = `rgba(138, 149, 201, ${0.12 - (distance / connectionDistance) * 0.12})`;
-              ctx.lineWidth = 0.5;
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.stroke();
-            }
-          }
-        }
       }
       animationFrameId = requestAnimationFrame(animate);
     };
 
     init();
-    animate();
+
+    // Respect reduced-motion: draw a single static frame, no loop.
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p) => p.draw());
+    } else {
+      animate();
+    }
+
+    // Pause the loop when the hero scrolls out of view (saves CPU / battery / INP).
+    let running = !prefersReduced;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (prefersReduced) return;
+        if (entry.isIntersecting && !running) {
+          running = true;
+          animate();
+        } else if (!entry.isIntersecting && running) {
+          running = false;
+          cancelAnimationFrame(animationFrameId);
+        }
+      },
+      { threshold: 0 }
+    );
+    io.observe(canvas);
+
+    // Also pause when the browser tab is hidden.
+    const onVisibility = () => {
+      if (prefersReduced) return;
+      if (document.hidden) {
+        cancelAnimationFrame(animationFrameId);
+        running = false;
+      } else if (!running) {
+        running = true;
+        animate();
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibility);
 
     return () => {
       window.removeEventListener('resize', resize);
       window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('visibilitychange', onVisibility);
+      io.disconnect();
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
